@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* header-section start here */
+
+
+
+
+.header-section {
+
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E2E2E;
+
+
+
+}
+
+.logo {
+    display: flex;
+
+    font-size: 50px;
+    padding: 20px;
+
+    /* color: #2E2E2E; background-color:  hobe ai color; */
+
+    color: #E1AD01;
+
+}
+
+.logo h1 {
+    font-size: 45px;
+    padding-left: 20px;
+}
+
+.menu {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+
+
+
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: #E1AD01;
+    border: none;
+    color: whitesmoke;
+
+
+
+}
+
+a:hover {
+    color: #E1AD01;
+    ;
+}
