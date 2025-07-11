@@ -16,12 +16,13 @@
 
 .header-section {
 
-    border: 2px solid black;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2E2E2E;
+    /* background-color: #2E2E2E; */
 
+background-color: #151817;
 
 
 }
@@ -67,10 +68,12 @@ a {
 }
 
 .btn {
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: #E1AD01;
     border: none;
     color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
 
 
 
@@ -78,5 +81,60 @@ a {
 
 a:hover {
     color: #E1AD01;
-    ;
+
 }
+#home{
+    
+background-color: #E1AD01;
+padding: 5px 5px;
+
+}
+
+/* hero-section starts here */
+
+.hero-section {
+
+    display: flex;
+    width: 100%;
+    background-color: #151817;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.text-heading {
+   
+
+    color: whitesmoke;
+    width: 40%;
+    text-align: center;
+    
+   
+}
+
+.btn-new  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+   
+}
+
+
+
+.hero-image {
+    width: 58%;
+    height: 100vh;
+    background-image: url("../resturantlandingpage/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+
+
+
+
+}
+
+
+ 
