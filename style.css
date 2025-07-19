@@ -12,17 +12,23 @@
 /* header-section start here */
 
 
+.wrapper {
 
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
 
 .header-section {
 
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* background-color: #2E2E2E; */
 
-background-color: #151817;
+    background-color: #151817;
 
 
 }
@@ -83,10 +89,11 @@ a:hover {
     color: #E1AD01;
 
 }
-#home{
-    
-background-color: #E1AD01;
-padding: 5px 5px;
+
+#home {
+
+    background-color: #E1AD01;
+    padding: 5px 5px;
 
 }
 
@@ -99,25 +106,25 @@ padding: 5px 5px;
     background-color: #151817;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .text-heading {
-   
+
 
     color: whitesmoke;
     width: 40%;
     text-align: center;
-    
-   
+
+
 }
 
-.btn-new  {
+.btn-new {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
-   
+
 }
 
 
@@ -129,7 +136,7 @@ padding: 5px 5px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  
+
 
 
 
@@ -137,4 +144,153 @@ padding: 5px 5px;
 }
 
 
- 
+
+/* card section start here */
+
+.card-container {
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+
+
+
+}
+
+.card {
+
+
+
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 20px 10px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: cardanimation 5s ease-in-out 0s 1 normal forwards;
+
+}
+
+i {
+    font-size: 50px;
+    color: #E1AD01;
+
+}
+
+
+@keyframes cardanimation {
+
+    0% {
+        transform: translatey(500px);
+    }
+
+    100% {}
+
+}
+
+/* card -section end here */
+
+/* start about us section */
+
+.about-us {
+    margin-top: 40px;
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+
+
+
+
+
+
+
+
+
+}
+
+.about-gallery {
+
+
+    display: flex;
+    width: 50%;
+    gap: 10px;
+
+
+}
+
+
+
+
+
+img {
+    /* display: block; */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+
+
+
+
+}
+
+.aboutUs-heading {
+    margin-bottom: 500px;
+    width: 50%;
+    font-style: italic;
+
+
+}
+
+#line {
+    font-style: italic;
+
+}
+
+
+#line::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    background-color: #E1AD01;
+     margin-left: 20px; 
+     height: 2px;
+    
+   
+}
+
+.paragraph{
+    
+    line-height: 1.4;
+}
+
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-line{
+    /* width: 50px; */
+    margin-top: 10px;
+    display: inline;
+    
+     border: 5px solid yellow;
+}
+.chefs{
+    display: flex;
+    justify-content: space-around;
+}
+
+#ex-heading{
+    display: inline;
+    padding: 10px;
+}
+.arrow{
+    /* width: 20px; */
+    font-size: 70px;
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
