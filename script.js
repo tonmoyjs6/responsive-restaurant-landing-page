@@ -29,3 +29,57 @@ let shefsInterval=setInterval(()=>{
     }
 
 },100)
+
+
+
+
+// api for food menu
+
+
+const lunch=document.getElementById("lunch")
+
+
+lunch.addEventListener("click",()=>{
+
+    fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
+    .then(values=>values.json())
+    .then(values=>{
+        const realValues=values.categories.slice(0,6)
+         const mainItems=document.getElementById("main-items")
+        realValues.map((element)=>{
+            console.log(element);
+   
+
+            // const menuItems=document.getElementById("items")
+            const div=document.createElement("div")
+            div.id="Items"
+
+            mainItems.appendChild(div)
+            let image=document.createElement("img")
+            image.src=element.strCategoryThumb
+            div.appendChild(image)
+            let h4=document.createElement("h4")
+            h4.innerText=`${element.strCategoryDescription.slice(0,40)}`
+            div.appendChild(h4)
+            let p=document.createElement("p")
+            p.innerText="$115"
+            p.style.color="#E1AD01"
+            p.style.fontSize="40px"
+            div.appendChild(p)
+
+
+
+
+
+
+            
+            
+            
+
+        })
+    })
+   
+  
+
+   
+})

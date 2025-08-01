@@ -249,48 +249,75 @@ img {
 }
 
 
-#line::after{
+#line::after {
     content: "";
     display: inline-block;
     width: 20px;
     background-color: #E1AD01;
-     margin-left: 20px; 
-     height: 2px;
-    
-   
+    margin-left: 20px;
+    height: 2px;
+
+
 }
 
-.paragraph{
-    
+.paragraph {
+
     line-height: 1.4;
 }
 
 
-.experience{
+.experience {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.vertical-line{
+.vertical-line {
     /* width: 50px; */
     margin-top: 10px;
     display: inline;
-    
-     border: 5px solid yellow;
+
+    border: 5px solid yellow;
 }
-.chefs{
+
+.chefs {
     display: flex;
     justify-content: space-around;
 }
 
-#ex-heading{
+#ex-heading {
     display: inline;
     padding: 10px;
 }
-.arrow{
+
+.arrow {
     /* width: 20px; */
     font-size: 70px;
     box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+
+.food-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items{
+     cursor: pointer;
+    display: flex;
+  
+    
+}
+
+.menu-items >div{
+    margin: 20px;
+}
+
+#main-items{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
