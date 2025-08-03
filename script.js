@@ -34,12 +34,14 @@ let shefsInterval=setInterval(()=>{
 
 
 // api for food menu
-
+let mainContainer=document.getElementById("main-items")
 
 const lunch=document.getElementById("lunch")
 
 
 lunch.addEventListener("click",()=>{
+    mainContainer.innerHTML=""
+
 
     fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
     .then(values=>values.json())
@@ -83,3 +85,54 @@ lunch.addEventListener("click",()=>{
 
    
 })
+
+
+let dinner=document.getElementById("dinner")
+
+dinner.addEventListener("click",()=>{
+    mainContainer.innerHTML=""
+
+
+    fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
+    .then(values=>values.json())
+    .then(values=>{
+        const realValues=values.categories.slice(6,12)
+         const mainItems=document.getElementById("main-items")
+        realValues.map((element)=>{
+            console.log(element);
+   
+
+            // const menuItems=document.getElementById("items")
+            const div=document.createElement("div")
+            div.id="Items"
+
+            mainItems.appendChild(div)
+            let image=document.createElement("img")
+            image.src=element.strCategoryThumb
+            div.appendChild(image)
+            let h4=document.createElement("h4")
+            h4.innerText=`${element.strCategoryDescription.slice(0,40)}`
+            div.appendChild(h4)
+            let p=document.createElement("p")
+            p.innerText="$115"
+            p.style.color="#E1AD01"
+            p.style.fontSize="40px"
+            div.appendChild(p)
+
+
+
+
+
+
+            
+            
+            
+
+        })
+    })
+   
+  
+
+   
+})
+

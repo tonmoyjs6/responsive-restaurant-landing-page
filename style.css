@@ -19,10 +19,14 @@
 
 
 }
+header{
+    position: sticky;
+    top:0;
 
+}
 .header-section {
 
-
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -321,3 +325,42 @@ img {
     /* grid-template-rows: 1fr 1fr; */
 }
 
+
+
+
+/* table section start here */
+.table-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.table-form{
+    background-color: #0E1828;
+    color: white;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 150px;
+    padding: 10px 0;
+    margin: 10px;
+    /* border: 2px solid yellow; */
+   
+}
+
+textarea{
+    width: 330px;
+    margin-left: 10px;
+    padding: 20px;
+}
+.button{
+    margin: 10px;
+    width: 327px;
+    height: 100px;
+
+}
