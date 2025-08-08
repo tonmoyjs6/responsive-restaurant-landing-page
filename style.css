@@ -139,7 +139,7 @@ a:hover {
 .hero-image {
     width: 58%;
     height: 100vh;
-    background-image: url("../resturantlandingpage/images/hero.jpg");
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
