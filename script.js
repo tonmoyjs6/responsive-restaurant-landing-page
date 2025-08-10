@@ -11,7 +11,7 @@ let interval=setInterval(()=>{
             clearInterval(interval)
        }
     
-},400)
+},1000)
 
 
 let chefsCount=0
@@ -28,7 +28,7 @@ let shefsInterval=setInterval(()=>{
         clearInterval(shefsInterval)
     }
 
-},300)
+},1000)
 
 
 
@@ -37,6 +37,8 @@ let shefsInterval=setInterval(()=>{
 
 
 let mainContainer=document.getElementById("main-items")
+
+
 
 const breakfast=document.getElementById("breakfast")
 
